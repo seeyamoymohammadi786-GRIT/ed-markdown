@@ -1,0 +1,24 @@
+# 🐞 Incidencia: Login devuelve 401 Unauthorized
+
+## Conclusión
+La causa más probable es:
+- Un **header ausente**.
+- Un **campo mal escrito** (por ejemplo, `email` vs. `username`).
+
+## Descripción
+El login contra la API devuelve `401 Unauthorized` pese a usar credenciales válidas.
+
+## Síntomas
+- El usuario introduce credenciales válidas.
+- La API responde con `401 Unauthorized`.
+- La conectividad con el servidor es correcta (no es un problema de red).
+
+## Acciones realizadas
+- **Endpoint probado:** `POST /api/v1/login`
+- **Cabeceras revisadas:** `Content-Type: application/json`
+- **Petición de prueba:**
+
+```bash
+curl -i -X POST https://api.ejemplo.com/api/v1/login \
+  -H "Content-Type: application/json" \
+  -d '{"email":"demo@ejemplo.com","password":"demo123"}'

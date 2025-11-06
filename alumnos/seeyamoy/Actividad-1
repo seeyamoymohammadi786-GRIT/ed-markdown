@@ -1,0 +1,20 @@
+# 🛠️ Sesión de Configuración Android Studio
+## ✅ Resumen de la sesión
+Hoy se actualizó **Android Studio** a la versión estable y se configuró el **SDK Platform 34**.  
+También se revisó el **Gradle Wrapper (8.7)** y se ejecutó una app de ejemplo en un emulador.
+---
+## 🔧 Pasos realizados
+1. Se actualizó Android Studio e instaló el SDK Platform 34.
+2. Se ajustó Gradle a la versión **8.7** en el proyecto.
+3. Se creó un emulador **Pixel 5**.
+4. Se lanzó la app de ejemplo **“Empty Activity”**.
+---
+## 💡 Consejo
+> Documentar los pasos te ahorra tiempo mañana.
+---
+## 🧪 Comandos de referencia
+```bash
+sdkmanager --list
+./gradlew --version
+``
+ 
